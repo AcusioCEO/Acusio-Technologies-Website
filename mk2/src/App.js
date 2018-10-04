@@ -5,11 +5,13 @@ import "./App.css";
 import Logo from "./components/Favicon";
 import Navigation from "./components/Navigation";
 import FooterInfo from "./components/FooterInfo";
+import SliderInfo from "./components/SliderInfo";
 
 //Ant Design Library
-import { Layout, Menu, Icon } from "antd";
+import { Layout } from "antd";
 import "antd/dist/antd.css";
 
+//React Router
 import Routing from "./components/Routing";
 
 const { Header, Content, Footer, Sider } = Layout;
@@ -40,32 +42,7 @@ class App extends Component {
             onCollapse={this.onCollapse}
             className="side-bar"
           >
-            <Menu theme="dark" mode="inline" defaultSelectedKeys={["1"]}>
-              <Menu.Item key="1">
-                <Icon type="pie-chart" />
-                <span>Option 1</span>
-              </Menu.Item>
-              <Menu.Item key="2">
-                <Icon type="desktop" />
-                <span>Option 2</span>
-              </Menu.Item>
-              <Menu.Item key="3">
-                <Icon type="pie-chart" />
-                <span>Option 1</span>
-              </Menu.Item>
-              <Menu.Item key="4">
-                <Icon type="desktop" />
-                <span>Option 2</span>
-              </Menu.Item>
-              <Menu.Item key="5">
-                <Icon type="pie-chart" />
-                <span>Option 1</span>
-              </Menu.Item>
-              <Menu.Item key="6">
-                <Icon type="desktop" />
-                <span>Option 2</span>
-              </Menu.Item>
-            </Menu>
+            <SliderInfo />
           </Sider>
           <Layout>
             <Content />
