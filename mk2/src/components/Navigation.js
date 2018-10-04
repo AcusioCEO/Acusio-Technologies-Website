@@ -1,5 +1,5 @@
 import React, { Component } from "react";
-import { Row, Col, Menu } from "antd";
+import { Menu } from "antd";
 import { Link } from "react-router-dom";
 
 import "../App.css";
@@ -8,8 +8,6 @@ class Navigation extends Component {
   render() {
     return (
       <div>
-        {/* <Row>
-          <Col className="hunnit" span={}> */}
         <Menu
           className="navbar"
           theme="dark"

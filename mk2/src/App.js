@@ -1,14 +1,17 @@
 import React, { Component } from "react";
 import "./App.css";
+
+// Component imports
 import Logo from "./components/Favicon";
 import Navigation from "./components/Navigation";
+import FooterInfo from "./components/FooterInfo";
 
-import "antd/dist/antd.css";
+//Ant Design Library
 import { Layout, Menu, Icon } from "antd";
-import { Link } from "react-router-dom";
+import "antd/dist/antd.css";
+
 import Routing from "./components/Routing";
 
-const { SubMenu } = Menu;
 const { Header, Content, Footer, Sider } = Layout;
 
 class App extends Component {
@@ -67,7 +70,9 @@ class App extends Component {
           <Layout>
             <Content />
             <Routing />
-            <Footer>Footer</Footer>
+            <Footer>
+              <FooterInfo />
+            </Footer>
           </Layout>
         </Layout>
       </Layout>
