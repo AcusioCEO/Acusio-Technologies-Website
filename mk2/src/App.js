@@ -44,9 +44,11 @@ class App extends Component {
           >
             <SliderInfo />
           </Sider>
+
           <Layout>
-            <Content />
-            <Routing />
+            <Content>
+              <Routing />
+            </Content>
             <Footer>
               <FooterInfo />
             </Footer>

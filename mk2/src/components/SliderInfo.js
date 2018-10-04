@@ -1,4 +1,5 @@
 import React, { Component } from "react";
+import { Link } from "react-router-dom";
 import { Menu, Icon } from "antd";
 
 class SliderInfo extends Component {
@@ -7,28 +8,22 @@ class SliderInfo extends Component {
       <div>
         <Menu theme="dark" mode="inline" defaultSelectedKeys={["1"]}>
           <Menu.Item key="1">
-            <Icon type="pie-chart" />
-            <span>Option 1</span>
+            <Link to="/about">
+              <Icon type="team" />
+              <span>About</span>
+            </Link>
           </Menu.Item>
           <Menu.Item key="2">
-            <Icon type="desktop" />
-            <span>Option 2</span>
+            <Link to="/forum">
+              <Icon type="message" />
+              <span>Forum</span>
+            </Link>
           </Menu.Item>
           <Menu.Item key="3">
-            <Icon type="pie-chart" />
-            <span>Option 1</span>
-          </Menu.Item>
-          <Menu.Item key="4">
-            <Icon type="desktop" />
-            <span>Option 2</span>
-          </Menu.Item>
-          <Menu.Item key="5">
-            <Icon type="pie-chart" />
-            <span>Option 1</span>
-          </Menu.Item>
-          <Menu.Item key="6">
-            <Icon type="desktop" />
-            <span>Option 2</span>
+            <Link to="/contact">
+              <Icon type="phone" />
+              <span>Contact</span>
+            </Link>
           </Menu.Item>
         </Menu>
       </div>
