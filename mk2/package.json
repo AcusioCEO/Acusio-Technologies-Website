@@ -1,5 +1,5 @@
 {
-  "name": "mk2",
+  "name": "acusiotechnologies",
   "version": "0.1.0",
   "private": true,
   "dependencies": {
@@ -15,5 +15,13 @@
     "build": "react-scripts build",
     "test": "react-scripts test --env=jsdom",
     "eject": "react-scripts eject"
-  }
+  },
+  "description": "This is our company website.",
+  "main": "index.js",
+  "repository": {
+    "type": "git",
+    "url": "Acusio-Technologies-Website"
+  },
+  "author": "",
+  "license": "ISC"
 }
