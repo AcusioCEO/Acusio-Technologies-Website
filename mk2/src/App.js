@@ -13,7 +13,7 @@ const { Header, Content, Footer, Sider } = Layout;
 
 class App extends Component {
   state = {
-    collapsed: false
+    collapsed: true
   };
 
   onCollapse = collapsed => {
